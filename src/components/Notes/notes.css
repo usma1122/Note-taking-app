@@ -1,0 +1,119 @@
+.notes-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  background: #f5f7fb;
+  background-color: rgb(255, 255, 255);
+}
+
+.notes-form {
+  max-width: 825px;
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Segoe UI", sans-serif;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-heading {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+}
+
+.notes-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.notes-label {
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #444;
+}
+
+.notes-input,
+.notes-textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  resize: none;
+  transition: 0.2s ease;
+}
+
+.form-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.submit-btn,
+.view-btn,
+.Logout-btn,
+.Share-btn {
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  flex-basis: 100%;
+}
+
+.submit-btn {
+  background: #4cafef;
+}
+.Share-btn {
+  background-color: rgb(39, 117, 39);
+}
+
+.submit-btn:hover {
+  background: #379cdb;
+}
+
+.view-btn {
+  background: #ff7043;
+}
+
+.view-btn:hover {
+  background: #e55b2f;
+}
+.Logout-btn {
+  background: rgb(198, 51, 51);
+}
+
+.Logout-btn:hover {
+  background: rgb(173, 61, 61);
+}
+
+@media (max-width: 480px) {
+  .form-actions {
+    flex-direction: column;
+  }
+  .submit-btn,
+  .view-btn,
+  .Logout-btn {
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    flex: auto;
+  }
+  .notes-container {
+    padding: 20px 20px;
+  }
+}
