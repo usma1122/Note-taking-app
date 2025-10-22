@@ -10,6 +10,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .login-container {
   width: 100%;
   max-width: 450px;
@@ -20,21 +21,16 @@
   box-shadow: 0px 4px 20px #00000087;
   border-radius: 10px;
 }
+
 .login-heading {
   color: rgba(255, 255, 255, 0.933);
   font-family: cursive;
   margin-bottom: 10px;
 }
-.login-form {
-  margin-bottom: 10px;
-}
-.input-form {
-  margin-bottom: 10px;
-}
+
 .input-field {
   padding: 9px;
   width: 100%;
-  border-radius: 2px;
   border: none;
   margin-bottom: 10px;
   background: transparent;
@@ -50,24 +46,13 @@
   color: white;
   margin-bottom: 10px;
   background-color: #4cafef;
+  transition: 0.3s ease;
 }
+
 .login-btn:hover {
   background: #379fd4;
 }
-.footer-login {
-  margin-top: 10px;
-}
-.footer-login-text {
-  color: white;
-  margin-bottom: 8px;
-}
-.login-btn-navigate {
-  background: transparent;
-  color: #4cafef;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-}
+
 .forgot-btn {
   border: none;
   background: none;
@@ -77,4 +62,75 @@
   left: 141px;
   top: -3px;
   font-weight: bold;
+}
+
+.footer-login-text {
+  color: white;
+  margin-bottom: 8px;
+}
+
+.login-btn-navigate {
+  background: transparent;
+  color: #4cafef;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* 📱 Responsive Styles */
+@media (max-width: 768px) {
+  .login-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .login-heading {
+    font-size: 22px;
+  }
+
+  .input-field {
+    font-size: 14px;
+  }
+
+  .login-btn {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .forgot-btn {
+    left: auto;
+    position: static;
+    display: block;
+    text-align: right;
+  }
+}
+
+@media (max-width: 480px) {
+  .bg-image {
+    background-size: cover;
+    background-attachment: scroll;
+  }
+
+  .login-container {
+    box-shadow: none;
+    border-radius: 8px;
+    padding: 15px;
+  }
+
+  .login-heading {
+    font-size: 20px;
+  }
+
+  .login-btn {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .login-btn-navigate {
+    font-size: 14px;
+  }
+
+  .forgot-btn {
+    font-size: 12px;
+  }
 }

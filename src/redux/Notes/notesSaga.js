@@ -13,7 +13,7 @@ import {
   editUserDataSuccess,
   editUserDataFailure,
 } from "./actions";
-import { db , auth } from "../../services/fireBase";
+import { db, auth } from "../../services/fireBase";
 import {
   addDoc,
   collection,
@@ -36,7 +36,7 @@ function* addUserDataSaga({ payload }) {
 
 function* fetchUserDataSaga({ payload }) {
   // console.log(payload);
-
+  
   try {
     const q = query(collection(db, "notes"), where("userId", "==", payload));
     const qureySnapshot = yield call(getDocs, q);

@@ -51,6 +51,7 @@
   color: white;
   margin-bottom: 10px;
   background-color: #4cafef;
+  transition: 0.3s ease;
 }
 
 .btn-submit:hover {
@@ -72,4 +73,50 @@
   border: none;
   cursor: pointer;
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .register-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .register-heading {
+    font-size: 22px;
+  }
+
+  .form-input {
+    font-size: 14px;
+  }
+
+  .btn-submit {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bg-img {
+    background-size: cover;
+    background-attachment: scroll;
+  }
+
+  .register-container {
+    padding: 15px;
+    box-shadow: none;
+    border-radius: 8px;
+  }
+
+  .register-heading {
+    font-size: 20px;
+  }
+
+  .btn-submit {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .btn-navigate {
+    font-size: 14px;
+  }
 }
