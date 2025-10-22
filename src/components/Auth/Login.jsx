@@ -8,7 +8,6 @@ function Login() {
   const { register, handleSubmit } = useForm();
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  // const error = useSelector((state) => state.auth.error?.code);
   const redirectToHomePage = () => {
     navigate("/");
   };
