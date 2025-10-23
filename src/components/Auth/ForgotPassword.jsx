@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { resetUserRequest } from "../../redux/Auth/actions";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import "./forgotPassword.css";
+import "./forgotpassword.css";
 function ForgotPassword() {
   const { register, handleSubmit } = useForm();
   const [success, setSuccess] = useState(false);
