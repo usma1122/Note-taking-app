@@ -1,5 +1,5 @@
 import React from "react";
-import "./displayNotes.css";
+import "./displaynotes.css";
 import { useSelector, useDispatch } from "react-redux";
 import { logoutUserRequest } from "../../redux/Auth/actions";
 import Card from "../Card/Card";
